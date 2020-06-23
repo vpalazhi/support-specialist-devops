@@ -1,0 +1,310 @@
+{
+  "kind": "PersistentVolumeList",
+  "apiVersion": "v1",
+  "metadata": {
+    "selfLink": "/api/v1/persistentvolumes",
+    "resourceVersion": "3284"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "drupal-mysql-pv",
+        "selfLink": "/api/v1/persistentvolumes/drupal-mysql-pv",
+        "uid": "abfaf17d-aa8f-4f3f-a728-af706a9d814c",
+        "resourceVersion": "3171",
+        "creationTimestamp": "2020-06-23T15:15:16Z",
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"PersistentVolume\",\"metadata\":{\"annotations\":{},\"name\":\"drupal-mysql-pv\"},\"spec\":{\"accessModes\":[\"ReadWriteMany\"],\"capacity\":{\"storage\":\"5Gi\"},\"hostPath\":{\"path\":\"/drupal-mysql-data\"}}}\n"
+        },
+        "finalizers": [
+          "kubernetes.io/pv-protection"
+        ],
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:phase": {}
+              }
+            }
+          },
+          {
+            "manager": "kubectl",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                "f:accessModes": {},
+                "f:capacity": {
+                  ".": {},
+                  "f:storage": {}
+                },
+                "f:hostPath": {
+                  ".": {},
+                  "f:path": {},
+                  "f:type": {}
+                },
+                "f:persistentVolumeReclaimPolicy": {},
+                "f:volumeMode": {}
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "capacity": {
+          "storage": "5Gi"
+        },
+        "hostPath": {
+          "path": "/drupal-mysql-data",
+          "type": ""
+        },
+        "accessModes": [
+          "ReadWriteMany"
+        ],
+        "persistentVolumeReclaimPolicy": "Retain",
+        "volumeMode": "Filesystem"
+      },
+      "status": {
+        "phase": "Available"
+      }
+    },
+    {
+      "metadata": {
+        "name": "drupal-pv",
+        "selfLink": "/api/v1/persistentvolumes/drupal-pv",
+        "uid": "1578ee5c-c31b-4df4-bdef-063b601612fc",
+        "resourceVersion": "3173",
+        "creationTimestamp": "2020-06-23T15:15:16Z",
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"PersistentVolume\",\"metadata\":{\"annotations\":{},\"name\":\"drupal-pv\"},\"spec\":{\"accessModes\":[\"ReadWriteOnce\"],\"capacity\":{\"storage\":\"5Gi\"},\"hostPath\":{\"path\":\"/drupal-data\"}}}\n"
+        },
+        "finalizers": [
+          "kubernetes.io/pv-protection"
+        ],
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:phase": {}
+              }
+            }
+          },
+          {
+            "manager": "kubectl",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                "f:accessModes": {},
+                "f:capacity": {
+                  ".": {},
+                  "f:storage": {}
+                },
+                "f:hostPath": {
+                  ".": {},
+                  "f:path": {},
+                  "f:type": {}
+                },
+                "f:persistentVolumeReclaimPolicy": {},
+                "f:volumeMode": {}
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "capacity": {
+          "storage": "5Gi"
+        },
+        "hostPath": {
+          "path": "/drupal-data",
+          "type": ""
+        },
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "persistentVolumeReclaimPolicy": "Retain",
+        "volumeMode": "Filesystem"
+      },
+      "status": {
+        "phase": "Available"
+      }
+    },
+    {
+      "metadata": {
+        "name": "drupal-pv-2",
+        "selfLink": "/api/v1/persistentvolumes/drupal-pv-2",
+        "uid": "c40bbdfd-7d39-429a-b198-528e78c08bdb",
+        "resourceVersion": "3175",
+        "creationTimestamp": "2020-06-23T15:15:16Z",
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"PersistentVolume\",\"metadata\":{\"annotations\":{},\"name\":\"drupal-pv-2\"},\"spec\":{\"accessModes\":[\"ReadWriteOnce\"],\"capacity\":{\"storage\":\"5Gi\"},\"hostPath\":{\"path\":\"/drupal-data-2\"}}}\n"
+        },
+        "finalizers": [
+          "kubernetes.io/pv-protection"
+        ],
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:phase": {}
+              }
+            }
+          },
+          {
+            "manager": "kubectl",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                "f:accessModes": {},
+                "f:capacity": {
+                  ".": {},
+                  "f:storage": {}
+                },
+                "f:hostPath": {
+                  ".": {},
+                  "f:path": {},
+                  "f:type": {}
+                },
+                "f:persistentVolumeReclaimPolicy": {},
+                "f:volumeMode": {}
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "capacity": {
+          "storage": "5Gi"
+        },
+        "hostPath": {
+          "path": "/drupal-data-2",
+          "type": ""
+        },
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "persistentVolumeReclaimPolicy": "Retain",
+        "volumeMode": "Filesystem"
+      },
+      "status": {
+        "phase": "Available"
+      }
+    },
+    {
+      "metadata": {
+        "name": "drupal-pv-3",
+        "selfLink": "/api/v1/persistentvolumes/drupal-pv-3",
+        "uid": "817a7acf-ddbd-4baa-80ba-ee635fa6edbc",
+        "resourceVersion": "3177",
+        "creationTimestamp": "2020-06-23T15:15:16Z",
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"PersistentVolume\",\"metadata\":{\"annotations\":{},\"name\":\"drupal-pv-3\"},\"spec\":{\"accessModes\":[\"ReadWriteMany\"],\"capacity\":{\"storage\":\"10Gi\"},\"hostPath\":{\"path\":\"/drupal-data-3\"}}}\n"
+        },
+        "finalizers": [
+          "kubernetes.io/pv-protection"
+        ],
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:phase": {}
+              }
+            }
+          },
+          {
+            "manager": "kubectl",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2020-06-23T15:15:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                "f:accessModes": {},
+                "f:capacity": {
+                  ".": {},
+                  "f:storage": {}
+                },
+                "f:hostPath": {
+                  ".": {},
+                  "f:path": {},
+                  "f:type": {}
+                },
+                "f:persistentVolumeReclaimPolicy": {},
+                "f:volumeMode": {}
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "capacity": {
+          "storage": "10Gi"
+        },
+        "hostPath": {
+          "path": "/drupal-data-3",
+          "type": ""
+        },
+        "accessModes": [
+          "ReadWriteMany"
+        ],
+        "persistentVolumeReclaimPolicy": "Retain",
+        "volumeMode": "Filesystem"
+      },
+      "status": {
+        "phase": "Available"
+      }
+    }
+  ]
+}
